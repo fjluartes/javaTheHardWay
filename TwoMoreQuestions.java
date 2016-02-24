@@ -49,7 +49,6 @@ public class TwoMoreQuestions {
 		
 		if (both.equals(insideOutsideBoth) && notLiving.equals(livingOrNot)) {
 			System.out.println("You're thinking about clothes. ");
-		}
-				
+		}	
 	}
 }
