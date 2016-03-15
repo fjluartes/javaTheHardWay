@@ -8,43 +8,43 @@ public class BabyNim
 	public static void main(String[] args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		int pile1, pile2, pile3, remove;
+		int A, B, C, remove;
 		String choice = "";
-		pile1 = 3;
-		pile2 = 3;
-		pile3 = 3;
+		A = 3;
+		B = 3;
+		C = 3;
 		
 		do 
 		{
-			System.out.println("A: " + pile1 + "\tB: "  + pile2 + "\tC: " + pile3);
+			System.out.println("A: " + A + "\tB: "  + B + "\tC: " + C);
 			System.out.println("\nChoose a pile: ");
 			choice = keyboard.next();
 			System.out.println("How many to remove from pile " + choice + ": ");
 			remove = keyboard.nextInt();
 				
-			if (choice.equals("A") && remove <= pile1)
+			if (choice.equals("A") && remove <= A)
 			{
-				pile1 = pile1 - remove;
+				A = A - remove;
 			}
 			
-			else if (choice.equals("B") && remove <= pile2)
+			else if (choice.equals("B") && remove <= B)
 			{
-				pile2 = pile2 - remove;
+				B = B - remove;
 			}
 			
-			else if (choice.equals("C") && remove <= pile3)
+			else if (choice.equals("C") && remove <= C)
 			{
-				pile3 = pile3 - remove;
+				C = C - remove;
 			}
 			else 
 			{
 				System.out.println("That's not valid.");
 			}
-		} while (pile1 > 0 || pile2 > 0 || pile3 > 0);
+		} while (A > 0 || B > 0 || C > 0);
 		
-		if (pile1 <= 0 && pile2 <= 0 && pile3 <= 0)
+		if (A <= 0 && B <= 0 && C <= 0)
 		{
-			System.out.println("A: " + pile1 + "\tB: "  + pile2 + "\tC: " + pile3);
+			System.out.println("A: " + A + "\tB: "  + B + "\tC: " + C);
 			System.out.println("All piles are empty. Good Job!");
 		}
 	}
