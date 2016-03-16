@@ -11,17 +11,18 @@ public class BabyNim
 		int A, B, C, remove;
 		String choice = "";
 		A = 3;
-		B = 3;
-		C = 3;
+		B = 4;
+		C = 5;
 		
-		do 
+		System.out.println("A: " + A + "\tB: " + B + "\tC: " + C);
+		
+		do
 		{
-			System.out.println("A: " + A + "\tB: "  + B + "\tC: " + C);
 			System.out.println("\nChoose a pile: ");
 			choice = keyboard.next();
 			System.out.println("How many to remove from pile " + choice + ": ");
 			remove = keyboard.nextInt();
-				
+
 			if (choice.equals("A") && remove <= A)
 			{
 				A = A - remove;
@@ -36,16 +37,23 @@ public class BabyNim
 			{
 				C = C - remove;
 			}
+			
+			else if (A == 0 && B == 0 && C == 0)
+			{
+				break;
+			}
+			
 			else 
 			{
-				System.out.println("That's not valid.");
+				System.out.println("That's not valid");
 			}
+			
+			System.out.println("A: " + A + "\tB: " + B + "\tC: " + C);
 		} while (A > 0 || B > 0 || C > 0);
 		
 		if (A <= 0 && B <= 0 && C <= 0)
 		{
-			System.out.println("A: " + A + "\tB: "  + B + "\tC: " + C);
-			System.out.println("All piles are empty. Good Job!");
+			System.out.println("\nAll piles are empty. Good Job!");
 		}
 	}
 }
