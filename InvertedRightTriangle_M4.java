@@ -1,4 +1,4 @@
-// Fred Luartes, 8/15/2016
+// Fred Luartes, 8/17/2016
 // Inverted Right Triangle: This program uses a for loop to create an inverted right triangle using asterisks. 
 
 public class InvertedRightTriangle_M4
