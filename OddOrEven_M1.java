@@ -1,5 +1,5 @@
 // Fred Luartes, 8/10/2016
-// OddOrEven: This program accepts a number and will determine if it's odd or even. Then the process will loop for 5 times.
+// Odd Or Even: This program accepts a number and will determine if it's odd or even. Then the process will loop for 5 times.
 
 import java.util.Scanner;
 
@@ -23,7 +23,5 @@ public class OddOrEven_M1
 				System.out.println("Number is odd.");
 			}
 		}
-
-		System.out.println("Program finished!");
 	}
 }

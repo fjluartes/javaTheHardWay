@@ -1,5 +1,5 @@
 // Fred Luartes, 8/10/2016
-// LowerToUppercase: This program accepts only lowercase letters, and display it in uppercase. 
+// Lower To Uppercase: This program accepts only lowercase letters, and display it in uppercase. 
 
 import java.util.Scanner;
 
@@ -22,7 +22,6 @@ public class LowerToUppercase_M2
 			letter = keyboard.nextLine();
 			check = letter.charAt(0);
 		}
-
 		System.out.println(letter.toUpperCase());
 	}
 }

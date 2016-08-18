@@ -1,5 +1,5 @@
 // Fred Luartes, 8/17/2016
-// NumberGuessingGame: This program asks the user to guess a number from 1-100. The program indicates if the guess is higher or lower than the number. The user guesses until he gets the correct answer and the program displays the number of tries.
+// Number Guessing Game: This program asks the user to guess a number from 1-100. The program indicates if the guess is higher or lower than the number. The user guesses until he gets the correct answer and the program displays the number of tries.
 
 import java.util.Scanner;
 import java.util.Random;
