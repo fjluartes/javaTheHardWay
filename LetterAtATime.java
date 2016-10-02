@@ -5,10 +5,8 @@
 
 import java.util.Scanner;
 
-public class LetterAtATime
-{
-	public static void main(String[] args)
-	{
+public class LetterAtATime {
+	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
 		int length, n = 0, vowelCount = 0;
 		String message;
@@ -23,36 +21,30 @@ public class LetterAtATime
 		System.out.println("Your message is " + length + " characters long.");
 		System.out.println("The first character is at position " + n + " and is '" + firstChar + "'");
 		System.out.println("The first character is at position " + (length - 1) + " and is '" + lastChar + "'");
-		for (int i = 0; i < length; i++)
-		{
+		
+		for (int i = 0; i < length; i++) {
 			character = message.charAt(i);
 			System.out.println(i + " - '" + character + "'");
-			if (character == 'a' || character == 'A')
-			{
+			if (character == 'a' || character == 'A') {
 				vowelCount++;
 			}
 			
-			else if (character == 'e' || character == 'E')
-			{
+			else if (character == 'e' || character == 'E') {
 				vowelCount++;
 			}
 			
-			else if (character == 'i' || character == 'I')
-			{
+			else if (character == 'i' || character == 'I') {
 				vowelCount++;
 			}
 			
-			else if (character == 'o' || character == 'O')
-			{
+			else if (character == 'o' || character == 'O') {
 				vowelCount++;
 			}
 			
-			else if (character == 'u' || character == 'U')
-			{
+			else if (character == 'u' || character == 'U') {
 				vowelCount++;
 			}
 		}
-		
 		System.out.println("Your message contains vowels " + vowelCount + " times. Interesting!");
 	}
 }	

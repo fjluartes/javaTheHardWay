@@ -3,22 +3,19 @@
 
 import java.util.Scanner;
 
-public class AddingValuesForLoop
-{
-	public static void main(String[] args)
-	{
+public class AddingValuesForLoop {
+	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
 		int number, sum;
-		
+
 		System.out.println("Number: ");
 		number = keyboard.nextInt();
 		sum = 0;
 		
-		for (int i = 1; i <= number; i++)
-		{
-			System.out.println(i);
-			sum = sum + i;
+		for (int i = 1; i <= number; i++) {
+			System.out.print(i + " ");
+			sum += i;
 		}
-		System.out.println("The sum is " + sum);
+		System.out.println("\nThe sum is " + sum);
 	}
 }

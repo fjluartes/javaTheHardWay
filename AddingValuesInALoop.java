@@ -3,10 +3,8 @@
 
 import java.util.Scanner;
 
-public class AddingValuesInALoop 
-{
-	public static void main(String[] args) 
-	{
+public class AddingValuesInALoop  {
+	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
 		int sum = 0;
 		
@@ -14,9 +12,8 @@ public class AddingValuesInALoop
 		System.out.println("Number: ");
 		int num = keyboard.nextInt();
 		
-		while (num != 0) 
-		{
-			sum = num + sum;
+		while (num != 0) {
+			sum = sum + num;
 			System.out.println("The total so far is " + sum);
 			System.out.println("Number: ");
 			num = keyboard.nextInt();
