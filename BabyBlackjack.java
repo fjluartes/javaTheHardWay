@@ -3,10 +3,8 @@
 
 import java.util.Random;
 
-public class BabyBlackjack
-{
-	public static void main(String[] args)
-	{		
+public class BabyBlackjack {
+	public static void main(String[] args) {		
 		int card1, card2, card3, card4, total1, total2;
 		Random r = new Random();
 		
@@ -17,22 +15,17 @@ public class BabyBlackjack
 		total1 = card1 + card2;
 		total2 = card3 + card4;
 		
-		System.out.println("Baby Blackjack!");
+		System.out.println("Baby Blackjack!\n");
 		System.out.println("You drew " + card1 + " and " + card2 + ".");
 		System.out.println("Your total is " + total1 + ".\n");
 		System.out.println("The dealer has " + card3 + " and " + card4 + ".");
 		System.out.println("Dealer's total is " + total2 + ".\n");
 		
-		if (total1 > total2)
-		{
+		if (total1 > total2) {
 			System.out.println("YOU WIN!");
-		}
-		else if (total1 < total2)
-		{
+		} else if (total1 < total2) {
 			System.out.println("YOU LOSE!");
-		}
-		else
-		{
+		} else {
 			System.out.println("DRAW!");
 		}
 	}

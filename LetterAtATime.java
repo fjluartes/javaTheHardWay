@@ -27,21 +27,13 @@ public class LetterAtATime {
 			System.out.println(i + " - '" + character + "'");
 			if (character == 'a' || character == 'A') {
 				vowelCount++;
-			}
-			
-			else if (character == 'e' || character == 'E') {
+			} else if (character == 'e' || character == 'E') {
 				vowelCount++;
-			}
-			
-			else if (character == 'i' || character == 'I') {
+			} else if (character == 'i' || character == 'I') {
 				vowelCount++;
-			}
-			
-			else if (character == 'o' || character == 'O') {
+			} else if (character == 'o' || character == 'O') {
 				vowelCount++;
-			}
-			
-			else if (character == 'u' || character == 'U') {
+			} else if (character == 'u' || character == 'U') {
 				vowelCount++;
 			}
 		}

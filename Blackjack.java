@@ -43,7 +43,6 @@ public class Blackjack {
 			choice = keyboard.nextLine();
 			choiceLower = choice.toLowerCase();
 		}
-
 		while (playerBust.equals("no")) {
 			System.out.println("\nDealer's turn.");
 			System.out.println("The dealer hidden card is " + dealerCard2 + ".");
@@ -56,27 +55,22 @@ public class Blackjack {
 				System.out.println("Dealer drew " + cardHit + ".");
 				System.out.println("The total is " + dealerTotal + ".");
 			}
-	
 			if (dealerTotal >= 17 && dealerTotal <= 21) {
 				System.out.println("\nDealer stays.");
 				break;
-			}
-			else if (dealerTotal > 21) {
+			} else if (dealerTotal > 21) {
 				System.out.println("\nDealer busts! YOU WIN!");	
 				break;
 			}
 		}
-
 		while (playerTotal <= 21 && dealerTotal <= 21) {
 			if (playerTotal > dealerTotal) {
 				System.out.println("\nYOU WIN!");
 				break;
-			}
-			else if (playerTotal < dealerTotal) {
+			} else if (playerTotal < dealerTotal) {
 				System.out.println("\nDEALER WINS!");
 				break;
-			}
-			else {
+			} else {
 				System.out.println("\nDraw! DEALER WINS!");
 				break;
 			}
