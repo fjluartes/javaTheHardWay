@@ -1,7 +1,5 @@
-public class HeronsFormulaNoFunction
-{
-	public static void main( String[] args )
-	{
+public class HeronsFormulaNoFunction {
+	public static void main( String[] args ) {
 		int a, b, c;
 		double s, A;
 		

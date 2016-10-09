@@ -3,7 +3,6 @@
 
 public class DistanceFormula {
 	public static void main( String[] args ) {
-		// test the formula a bit
 		double d1 = distance(-2,1 , 1,5);
 		System.out.println(" (-2,1) to (1,5) => " + d1 );
  
@@ -16,7 +15,6 @@ public class DistanceFormula {
 	}
  
 	public static double distance( int x1, int y1, int x2, int y2 ) {
-		// put your code up in here
 		double d = Math.sqrt( Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2) );
 		return d;
 	}

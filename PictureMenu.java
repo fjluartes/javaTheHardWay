@@ -22,10 +22,8 @@ public class PictureMenu {
 		} else if ( choice == 2 ) {
 			elephant();
 		} else if ( choice == 3 ) {
-			 // * write code here to call the function named 'teddybear'
 			teddybear();
 		} else if ( choice == 4 ) {
-			 // * write code here to call the function named 'snake'
 			snake();
 		} else {
 			System.out.println( "Sorry, that wasn't one of the choices." );
